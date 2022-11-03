@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LHZ.LinqToSql", "LHZ.LinqToSql\LHZ.LinqToSql.csproj", "{1973986F-4297-4F25-9FFA-ED259CC91729}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LHZ.LinqToSql.Test", "LHZ.LinqToSql.Test\LHZ.LinqToSql.Test.csproj", "{2DB13729-774B-4E8A-ABB8-8DE72EFACA49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1973986F-4297-4F25-9FFA-ED259CC91729}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1973986F-4297-4F25-9FFA-ED259CC91729}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1973986F-4297-4F25-9FFA-ED259CC91729}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1973986F-4297-4F25-9FFA-ED259CC91729}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DB13729-774B-4E8A-ABB8-8DE72EFACA49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DB13729-774B-4E8A-ABB8-8DE72EFACA49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DB13729-774B-4E8A-ABB8-8DE72EFACA49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DB13729-774B-4E8A-ABB8-8DE72EFACA49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3336F6B4-A824-41E2-B54A-E5962A7276A4}
+	EndGlobalSection
+EndGlobal
