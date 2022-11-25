@@ -1,0 +1,56 @@
+{
+  "format": 1,
+  "restore": {
+    "G:\\Study\\dotnet\\LHZ.LinqToSql\\src\\LHZ.LinqToSql\\LHZ.LinqToSql\\LHZ.LinqToSql.csproj": {}
+  },
+  "projects": {
+    "G:\\Study\\dotnet\\LHZ.LinqToSql\\src\\LHZ.LinqToSql\\LHZ.LinqToSql\\LHZ.LinqToSql.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "G:\\Study\\dotnet\\LHZ.LinqToSql\\src\\LHZ.LinqToSql\\LHZ.LinqToSql\\LHZ.LinqToSql.csproj",
+        "projectName": "LHZ.LinqToSql",
+        "projectPath": "G:\\Study\\dotnet\\LHZ.LinqToSql\\src\\LHZ.LinqToSql\\LHZ.LinqToSql\\LHZ.LinqToSql.csproj",
+        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
+        "outputPath": "G:\\Study\\dotnet\\LHZ.LinqToSql\\src\\LHZ.LinqToSql\\LHZ.LinqToSql\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net461"
+        ],
+        "sources": {
+          "http://nuget.lexun.com/nuget": {},
+          "https://nuget.cnblogs.com/v3/index.json": {}
+        },
+        "frameworks": {
+          "net461": {
+            "targetAlias": "net461",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net461": {
+          "targetAlias": "net461",
+          "dependencies": {
+            "Microsoft.Bcl.HashCode": {
+              "target": "Package",
+              "version": "[1.1.1, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

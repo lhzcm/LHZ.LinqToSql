@@ -8,6 +8,8 @@ namespace LHZ.LinqToSql
 {
     public class SelectQueryProvider : IQueryProvider
     {
+        private Expression _expresstion;
+        public Expression Expression => _expresstion;
         public IQueryable CreateQuery(Expression expression)
         {
             throw new NotImplementedException();
@@ -15,7 +17,8 @@ namespace LHZ.LinqToSql
 
         public IQueryable<TElement> CreateQuery<TElement>(Expression expression)
         {
-            throw new NotImplementedException();
+            _expresstion = expression;
+            return new SelectQueryable<TElement>(expression);
         }
 
         public object Execute(Expression expression)
@@ -25,7 +28,8 @@ namespace LHZ.LinqToSql
 
         public TResult Execute<TResult>(Expression expression)
         {
-            throw new NotImplementedException();
+
+            return default(TResult);
         }
     }
 }

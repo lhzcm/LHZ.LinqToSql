@@ -8,7 +8,6 @@ namespace LHZ.LinqToSql.Test
         [TestMethod]
         public void TestMethod1()
         {
-            Queryable
 
             Expression<Func<TestClass, bool>> exp1 = n => n.Id == 2;
             var exp1hashcode = ExpressionHashCode.GetExpressionHashCode(exp1);
@@ -21,6 +20,11 @@ namespace LHZ.LinqToSql.Test
 
             Expression<Func<TestClass, bool>> exp3 = n => n.Name.Length == tc.Name.Length;
             var exp3hashcode = ExpressionHashCode.GetExpressionHashCode(exp3);
+
+
+            SelectQueryable<TestClass> test = new SelectQueryable<TestClass>();
+            var res = test.Where(n => n.Id == 2).Where(n => n.Name == "");
+            var res2 = test.Where(n => n.Id == 2).Skip(2);
 
         }
     }

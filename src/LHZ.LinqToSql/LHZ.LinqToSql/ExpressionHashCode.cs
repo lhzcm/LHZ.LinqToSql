@@ -7,7 +7,7 @@ namespace LHZ.LinqToSql
 {
     public class ExpressionHashCode
     {
-        private static int[] _expressionTypeHashCodes = new int[84];
+        private static int[] _expressionTypeHashCodes = new int[128];
         private static readonly int _rand = new Random().Next();
 
         static ExpressionHashCode()
