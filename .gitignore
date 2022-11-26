@@ -1,5 +1,6 @@
-src/LHZ.LinqToSql/bin/
-src/LHZ.LinqToSql/obj/
+src/LHZ.LinqToSql/LHZ.LinqToSql/bin/
+src/LHZ.LinqToSql/LHZ.LinqToSql/obj/
+src/LHZ.LinqToSql/LHZ.LinqToSql/packages/
+src/LHZ.LinqToSql/LHZ.LinqToSql.Test/bin/
+src/LHZ.LinqToSql/LHZ.LinqToSql.Test/obj/
 src/LHZ.LinqToSql/packages/
-src/LHZ.LinqToSql.Test/bin/
-src/LHZ.LinqToSql.Test/obj/
