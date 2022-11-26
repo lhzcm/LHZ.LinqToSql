@@ -1,7 +1,7 @@
-﻿using LHZ.LinqToSql.Attributes;
-using System;
+﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data.Linq.Mapping;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
@@ -17,7 +17,19 @@ namespace LHZ.LinqToSql
         private static string _tableName;
         private static Type _elementType = typeof(T);
         private Expression _expression;
-        private IQueryProvider _queryProvider = new SelectQ3 ueryProvider();
+        private IQueryProvider _queryProvider = new SelectQueryProvider();
+
+        public SelectQueryable()
+        {
+            //_expression = Expression.Parameter(typeof(T));
+            _expression = Expression.Constant(this);
+        }
+
+        public SelectQueryable(Expression expression)
+        {
+            this._expression = expression;
+        }
+
         /// <summary>
         /// 获取表名
         /// </summary>
@@ -30,7 +42,7 @@ namespace LHZ.LinqToSql
                     var attr = System.Attribute.GetCustomAttribute(typeof(T), typeof(TableAttribute)) as TableAttribute;
                     if (attr != null)
                     {
-                        _tableName = attr.TableName;
+                        _tableName = attr.Name;
                     }
                     else
                     {
@@ -44,11 +56,12 @@ namespace LHZ.LinqToSql
 
         public Expression Expression => _expression;
 
-        public IQueryProvider Provider => throw new NotImplementedException();
+        public IQueryProvider Provider => _queryProvider;
 
         public IEnumerator<T> GetEnumerator()
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
+            return null;
         }
 
         IEnumerator IEnumerable.GetEnumerator()
