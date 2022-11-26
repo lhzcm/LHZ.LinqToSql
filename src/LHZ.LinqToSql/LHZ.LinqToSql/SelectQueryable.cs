@@ -17,7 +17,7 @@ namespace LHZ.LinqToSql
         private static string _tableName;
         private static Type _elementType = typeof(T);
         private Expression _expression;
-        private IQueryProvider _queryProvider = new SelectQueryProvider();
+        private IQueryProvider _queryProvider = new SelectQ3 ueryProvider();
         /// <summary>
         /// 获取表名
         /// </summary>
