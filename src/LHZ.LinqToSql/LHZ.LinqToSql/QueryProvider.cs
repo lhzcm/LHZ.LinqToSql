@@ -9,6 +9,7 @@ namespace LHZ.LinqToSql
     public class SelectQueryProvider : IQueryProvider
     {
         private Expression _expresstion;
+
         public Expression Expression => _expresstion;
         public IQueryable CreateQuery(Expression expression)
         {
@@ -30,6 +31,12 @@ namespace LHZ.LinqToSql
         {
 
             return default(TResult);
+        }
+
+        public StringBuilder ToSql()
+        {
+            StringBuilder strBuilder = new StringBuilder();
+            return strBuilder;
         }
     }
 }

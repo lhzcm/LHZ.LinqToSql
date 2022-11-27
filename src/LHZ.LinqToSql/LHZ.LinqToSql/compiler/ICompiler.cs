@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LHZ.LinqToSql.complier
+namespace LHZ.LinqToSql.Complier
 {
     public interface ICompiler
     {

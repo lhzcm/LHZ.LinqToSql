@@ -1,0 +1,1 @@
+MSBuild ./LHZ.LinqToSql/LHZ.LinqToSql.csproj -target:clean -target:Compile -target:Build -property:Configuration=Debug
