@@ -21,11 +21,10 @@ namespace LHZ.LinqToSql.Test
             Expression<Func<TestClass, bool>> exp3 = n => n.Name.Length == tc.Name.Length;
             var exp3hashcode = ExpressionHashCode.GetExpressionHashCode(exp3);
 
-
-            SelectQueryable<TestClass> test = new SelectQueryable<TestClass>();
-            var res = test.Where(n => n.Id == 2).Where(n => n.Name == "");
-            var res2 = test.Where(n => n.Id == 2).Skip(2);
-
+            int a = 0;
+            New.SelectQueryable<TestClass> test = new New.SelectQueryable<TestClass>();
+            var res = test.Where(n => n.Id == 2 && n.Id.ToString() == a.ToString());//.Where(n => n.Name == "");
+            var res2 = res.Where(n => n.Id == 2).Skip(2);
         }
     }
 
